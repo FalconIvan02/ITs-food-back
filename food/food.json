@@ -1,178 +1,219 @@
-{
-    "cakes": [
-        {
-            "image": "https://i.pinimg.com/564x/78/5f/df/785fdf57bd6ca140b4fd09c3239c577e.jpg",
-            "name": "Tiramisu",
-            "price": "$800",
-            "title": "Tiramisu",
-            "description": "Un postre italiano que combina delicados bizcochos de soletilla mojados en café con una suave crema de mascarpone. Este postre es conocido por su equilibrio entre el amargor del café y la dulzura de la crema, creando una experiencia indulgente y adictiva para el paladar."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/2c/da/3f/2cda3f135cb613ccd1492d9bf4f602db.jpg",
-            "name": "Torta de Frutilla",
-            "price": "$950",
-            "title": "Torta Frutilla",
-            "description": "Un postre delicado que consta de varias capas de bizcocho esponjoso intercaladas con rellenos de crema batida y rodajas de frutillas maduras. El contraste entre la suavidad del bizcocho y la frescura y dulzura de las frutillas crea una experiencia gustativa excepcional."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/23/1f/31/231f318c54cb5a16ca517dcf0c51a889.jpg",
-            "name": "Torta de Chocolate",
-            "price": "$950",
-            "title": "Torta Chocolate",
-            "description": "Un deleite irresistible con capas de esponjoso bizcocho de chocolate y un generoso glaseado de chocolate. Un placer indulgente que hace las delicias de los amantes del cacao."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/33/e3/e8/33e3e8877543346107a9af5db7876819.jpg",
-            "name": "Red Velvet",
-            "price": "$950",
-            "title": "Red Velvet",
-            "description": "Un postre irresistible con su característico color rojo intenso, textura suave y un sutil sabor a cacao, complementado con un glaseado de queso crema. Un placer indulgente para los amantes del dulce."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/c5/5b/f4/c55bf40c72e2a8cf2c595175306e110e.jpg",
-            "name": "Cheesecake de Frutos Rojos",
-            "price": "$800",
-            "title": "Cheesecake Rojo",
-            "description": "Un equilibrio perfecto entre la suavidad del queso y la explosión de sabores de los frutos rojos. Un postre irresistible que cautiva los paladares."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/83/84/31/838431a3683cae9c1c3f37e41167377d.jpg",
-            "name": "Cheesecake de Dulce de Leche",
-            "price": "$900",
-            "title": "Cheesecake Dulce",
-            "description": "Una deliciosa combinación de suavidad y dulzura, donde el cremoso queso se une al dulce caramelo del dulce de leche. Un postre que seduce con cada bocado, equilibrando la riqueza y la indulgencia en cada porción."
-        }
-    ],
-    "lunch": [
-        {
-            "image": "https://i.pinimg.com/564x/cf/bc/18/cfbc18ab76e1a7b51d6271c7e3b496be.jpg",
-            "name": "Pizza Napolitana",
-            "price": "$1200",
-            "title": "Pizza Napolitana",
-            "description": "Una obra maestra de la gastronomía italiana, conocida por su masa fina y aireada, perfectamente fermentada. Su sabor se realza con tomate fresco, mozzarella de búfala y fragantes hojas de albahaca. La cocción en horno de leña le da un borde ligeramente quemado y un toque ahumado, haciendo que esta pizza sea una experiencia culinaria inigualable."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/34/70/60/34706053725014d3aecae6996dac9d26.jpg",
-            "name": "Papas con Cheddar",
-            "price": "$900",
-            "title": "Papas Cheddar",
-            "description": "Delicioso manjar que consiste en papas doradas y crujientes cubiertas con queso cheddar derretido. La combinación de la textura crujiente de las papas y la cremosidad del queso cheddar crea un contraste perfecto de sabores y texturas."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/4a/37/0d/4a370de60a37be54e067765f94713e0f.jpg",
-            "name": "Hamburguesa Simple",
-            "price": "$900",
-            "title": "Hamburgesa Simple",
-            "description": "Una jugosa hamburguesa con carne a la parrilla, lechuga crujiente y rodajas de tomate fresco, todo en un suave pan. Una combinación fresca y sabrosa en cada bocado."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/bd/27/27/bd2727dcfa65dab41471e9d6fcfa83f3.jpg",
-            "name": "Doble Melt",
-            "price": "$3000",
-            "title": "Doble Melt",
-            "description": "Una explosión de sabor con dos jugosas carnes a la parrilla, abundante queso derretido, crujiente lechuga y nuestra especial salsa secreta, todo entre dos panes tostados. Un festín irresistible para los amantes de las hamburguesas y el queso."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/2c/e8/f5/2ce8f5f86c8adcd4b9112a4c885fe61e.jpg",
-            "name": "Tiple Melt",
-            "price": "$3600",
-            "title": "Triple Melt",
-            "description": "Hamburguesa Triple Melt: Un festín de sabor con tres carnes a la parrilla, queso fundido y una mezcla irresistible de ingredientes. Es una explosión de sabores que te cautiva desde el primer bocado."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/fc/62/e2/fc62e28dc420e87d0f309e8012cbda95.jpg",
-            "name": "Triple Bacon",
-            "price": "$1950",
-            "title": "Triple Bacon",
-            "description": "Una deliciosa explosión de sabor que combina tres jugosas hamburguesas con abundante bacon crujiente y queso derretido en un pan tierno. La elección perfecta para los amantes de la carne y el bacon."
-        }
-    ],
-    "drinks": [
-        {
-            "image": "https://i.pinimg.com/564x/17/5f/7d/175f7d30da96e2e05cc068b8d02b9ae2.jpg",
-            "name": "Mimosa",
-            "price": "$850",
-            "title": "Mimosa",
-            "description": "Un refrescante cóctel que combina jugo de naranja recién exprimido con champagne o vino espumoso. Su color dorado y burbujeante lo hace perfecto para brindar en ocasiones especiales o disfrutar en un brunch relajado."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/34/b7/eb/34b7eb5b61fe0b55a590b4900b7fc51d.jpg",
-            "name": "Piña Colada",
-            "price": "$900",
-            "title": "Piña Colada",
-            "description": "Un icónico cóctel tropical que combina jugo de piña fresca, crema de coco y ron blanco. Su sabor es una deliciosa fusión de dulzura y cremosidad, con un toque de ron que le añade un suave toque alcohólico.Es una opción refrescante y perfecta para relajarse en un entorno tropical o para disfrutar como un refresco veraniego."
-        },
-        {
-            "image": "https://i.pinimg.com/736x/48/68/6f/48686ffd357be25be4b553fd3de20dc0.jpg",
-            "name": "Margarita",
-            "price": "$800",
-            "title": "Margarita",
-            "description": "Un cóctel clásico y refrescante que combina tequila, licor de naranja y jugo de limón, servido en un vaso con borde de sal. Con su equilibrio entre lo dulce y lo ácido, es el acompañante perfecto para relajarse y disfrutar del momento."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/bb/59/1d/bb591dc8cdbc24d301e45f44dcebaf9b.jpg",
-            "name": "Mojito",
-            "price": "$950",
-            "title": "Mojito",
-            "description": "Un cóctel refrescante que combina el sabor cítrico de la lima con la frescura de la menta, mezclado con ron y soda, creando una bebida equilibrada y deliciosamente revitalizante. Perfecta para relajarse en cualquier ocasión."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/38/e5/6f/38e56fd5947584395ebf2fe5d075598a.jpg",
-            "name": "Fernet",
-            "price": "$900",
-            "title": "Fernet",
-            "description": " Un amargo licor italiano con una mezcla única de hierbas y especias que crea un sabor intenso y complejo. Ideal como aperitivo o digestivo."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/33/91/c2/3391c26924a46b3c23fde2bb0977d8aa.jpg",
-            "name": "Cosmopolitan",
-            "price": "$950",
-            "title": "Cosmopolitan",
-            "description": "Un cóctel elegante y refrescante, mezcla vodka con jugo de arándano, licor de naranja y un toque de jugo de lima. Su color rosado brillante y sabor equilibrado lo convierten en una bebida icónica y sofisticada."
-        }
-    ],
-    "coffees": [
-        {
-            "image": "https://i.pinimg.com/564x/6d/9e/aa/6d9eaaee432f94605d9ddb20a8bd5745.jpg",
-            "name": "Frapuccino de Crema y Limón",
-            "price": "$900",
-            "title": "Frapuccino de Crema y Limón",
-            "description": "Una bebida refrescante que combina limón cítrico con crema suave y café o leche, con una capa de crema montada encima para un toque indulgente. Un equilibrio perfecto entre lo dulce y lo ácido."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/ce/bc/22/cebc22b0e61a207fa53e756b966f0a45.jpg",
-            "name": "Café Espresso con Crema",
-            "price": "$850",
-            "title": "Café Espresso con Crema",
-            "description": "Una bebida de café que combina la intensidad del espresso con la suavidad y la textura cremosa de la crema. Se obtiene al extraer un espresso de gran calidad y luego coronarlo con una capa de crema espesa que se forma naturalmente durante la preparación. Esta crema aporta un contraste perfecto a la intensidad del café, creando una experiencia indulgente para los amantes del café que buscan un equilibrio entre el sabor fuerte y la suavidad aterciopelada en cada sorbo."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/1b/89/3b/1b893b4abfc5e377467575aa178d7ac9.jpg",
-            "name": "Café Canela y Cacao",
-            "price": "$800",
-            "title": "Café Canela",
-            "description": "Mezcla que combina la robustez del café con la calidez especiada de la canela y la indulgencia del cacao. Una experiencia de sabor reconfortante y deliciosamente equilibrada en cada sorbo."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/94/4d/19/944d19f4e38dca4fa7af9da179aa866f.jpg",
-            "name": "Café Matcha",
-            "price": "$950",
-            "title": "Café Matcha",
-            "description": "Una vibrante y saludable bebida verde, elaborada con finas hojas de té matcha molido, que ofrece un sabor fresco, terroso y lleno de energía. Un estimulante natural que fusiona la tradición japonesa con un toque contemporáneo."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/44/a2/87/44a2879014d5a910b1d759aa7b126e63.jpg",
-            "name": "Café Crema y Cacao",
-            "price": "$900",
-            "title": "Café Crema",
-            "description": "Una deliciosa fusión que combina la intensidad del café con la suavidad de la crema y el toque seductor del cacao. Una experiencia indulgente que equilibra sabores y te envuelve en un abrazo de sabor y textura."
-        },
-        {
-            "image": "https://i.pinimg.com/564x/f1/c0/35/f1c0359943c32bb15f497fb20ba76538.jpg",
-            "name": "Café Caramelo",
-            "price": "$950",
-            "title": "Café Caramelo",
-            "description": " Un elixir dulce y reconfortante, donde el aroma y sabor del café se mezcla armoniosamente con notas suaves y ricas de caramelo. Una indulgencia líquida que deleita los sentidos."
-        }
-    ]
-}
+[
+    {
+        "image": "https://i.pinimg.com/564x/78/5f/df/785fdf57bd6ca140b4fd09c3239c577e.jpg",
+        "id": "d65ca7f6-6c76-4c52-9a84-51d02ac2bd3d",
+        "name": "Tiramisu",
+        "type": ["cake"],
+        "price": "$800",
+        "title": "Tiramisu",
+        "description": "Un postre italiano que combina delicados bizcochos de soletilla mojados en café con una suave crema de mascarpone. Este postre es conocido por su equilibrio entre el amargor del café y la dulzura de la crema, creando una experiencia indulgente y adictiva para el paladar."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/2c/da/3f/2cda3f135cb613ccd1492d9bf4f602db.jpg",
+        "id": "a4a2df6a-8e8d-4b9a-a80c-6a5480c6828e",
+        "name": "Torta de Frutilla",
+        "type": ["cake"],
+        "price": "$950",
+        "title": "Torta Frutilla",
+        "description": "Un postre delicado que consta de varias capas de bizcocho esponjoso intercaladas con rellenos de crema batida y rodajas de frutillas maduras. El contraste entre la suavidad del bizcocho y la frescura y dulzura de las frutillas crea una experiencia gustativa excepcional."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/23/1f/31/231f318c54cb5a16ca517dcf0c51a889.jpg",
+        "id": "9c59a2e3-fbfc-4f8f-8b3b-03a9f7a0800e",
+        "name": "Torta de Chocolate",
+        "type": ["cake"],
+        "price": "$950",
+        "title": "Torta Chocolate",
+        "description": "Un deleite irresistible con capas de esponjoso bizcocho de chocolate y un generoso glaseado de chocolate. Un placer indulgente que hace las delicias de los amantes del cacao."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/33/e3/e8/33e3e8877543346107a9af5db7876819.jpg",
+        "id": "3f55cf4b-1b3e-4f33-bb12-7d1215220b89",
+        "name": "Red Velvet",
+        "type": ["cake"],
+        "price": "$950",
+        "title": "Red Velvet",
+        "description": "Un postre irresistible con su característico color rojo intenso, textura suave y un sutil sabor a cacao, complementado con un glaseado de queso crema. Un placer indulgente para los amantes del dulce."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/c5/5b/f4/c55bf40c72e2a8cf2c595175306e110e.jpg",
+        "id": "7a90c9f2-9a87-4d8a-8a87-11546f742dbc",
+        "name": "Cheesecake de Frutos Rojos",
+        "type": ["cake"],
+        "price": "$800",
+        "title": "Cheesecake Rojo",
+        "description": "Un equilibrio perfecto entre la suavidad del queso y la explosión de sabores de los frutos rojos. Un postre irresistible que cautiva los paladares."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/83/84/31/838431a3683cae9c1c3f37e41167377d.jpg",
+        "id": "54a7dfb2-5397-4c1b-8d2b-2873b1d393fc",
+        "name": "Cheesecake de Dulce de Leche",
+        "type": ["cake"],
+        "price": "$900",
+        "title": "Cheesecake Dulce",
+        "description": "Una deliciosa combinación de suavidad y dulzura, donde el cremoso queso se une al dulce caramelo del dulce de leche. Un postre que seduce con cada bocado, equilibrando la riqueza y la indulgencia en cada porción."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/cf/bc/18/cfbc18ab76e1a7b51d6271c7e3b496be.jpg",
+        "id": "1f3e21b7-4bb4-45f5-b318-3eac45ff1ecf",
+        "name": "Pizza Napolitana",
+        "type": ["lunch"],
+        "price": "$1200",
+        "title": "Pizza Napolitana",
+        "description": "Una obra maestra de la gastronomía italiana, conocida por su masa fina y aireada, perfectamente fermentada. Su sabor se realza con tomate fresco, mozzarella de búfala y fragantes hojas de albahaca. La cocción en horno de leña le da un borde ligeramente quemado y un toque ahumado, haciendo que esta pizza sea una experiencia culinaria inigualable."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/34/70/60/34706053725014d3aecae6996dac9d26.jpg",
+        "id": "b9951c98-5d37-4eab-8e8a-6dbf7e3a0dc3",
+        "name": "Papas con Cheddar",
+        "type": ["lunch"],
+        "price": "$900",
+        "title": "Papas Cheddar",
+        "description": "Delicioso manjar que consiste en papas doradas y crujientes cubiertas con queso cheddar derretido. La combinación de la textura crujiente de las papas y la cremosidad del queso cheddar crea un contraste perfecto de sabores y texturas."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/4a/37/0d/4a370de60a37be54e067765f94713e0f.jpg",
+        "id": "8c6f9d4e-3e0f-4e0b-9c36-dbb56db01dd2",
+        "name": "Hamburguesa Simple",
+        "type": ["lunch"],
+        "price": "$900",
+        "title": "Hamburgesa Simple",
+        "description": "Una jugosa hamburguesa con carne a la parrilla, lechuga crujiente y rodajas de tomate fresco, todo en un suave pan. Una combinación fresca y sabrosa en cada bocado."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/bd/27/27/bd2727dcfa65dab41471e9d6fcfa83f3.jpg",
+        "id": "b0fd96f1-17ab-4642-bc56-4c7ce65368cd",
+        "name": "Doble Melt",
+        "type": ["lunch"],
+        "price": "$3000",
+        "title": "Doble Melt",
+        "description": "Una explosión de sabor con dos jugosas carnes a la parrilla, abundante queso derretido, crujiente lechuga y nuestra especial salsa secreta, todo entre dos panes tostados. Un festín irresistible para los amantes de las hamburguesas y el queso."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/2c/e8/f5/2ce8f5f86c8adcd4b9112a4c885fe61e.jpg",
+        "id": "e8fe5c87-1c10-4178-9a57-3d22a6fb3985",
+        "name": "Tiple Melt",
+        "type": ["lunch"],
+        "price": "$3600",
+        "title": "Triple Melt",
+        "description": "Hamburguesa Triple Melt: Un festín de sabor con tres carnes a la parrilla, queso fundido y una mezcla irresistible de ingredientes. Es una explosión de sabores que te cautiva desde el primer bocado."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/fc/62/e2/fc62e28dc420e87d0f309e8012cbda95.jpg",
+        "id": "726ab93e-d8fe-49c9-836b-578453641184",
+        "name": "Triple Bacon",
+        "type": ["lunch"],
+        "price": "$1950",
+        "title": "Triple Bacon",
+        "description": "Una deliciosa explosión de sabor que combina tres jugosas hamburguesas con abundante bacon crujiente y queso derretido en un pan tierno. La elección perfecta para los amantes de la carne y el bacon."
+    },
+
+    {
+        "image": "https://i.pinimg.com/564x/17/5f/7d/175f7d30da96e2e05cc068b8d02b9ae2.jpg",
+        "id": "cbb5867d-69ee-4481-9ac6-55b05896f927",
+        "name": "Mimosa",
+        "type": ["drink"],
+        "price": "$850",
+        "title": "Mimosa",
+        "description": "Un refrescante cóctel que combina jugo de naranja recién exprimido con champagne o vino espumoso. Su color dorado y burbujeante lo hace perfecto para brindar en ocasiones especiales o disfrutar en un brunch relajado."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/34/b7/eb/34b7eb5b61fe0b55a590b4900b7fc51d.jpg",
+        "id": "f556f058-1a5d-4bfc-bf3b-c7d05f4eb5bd",
+        "name": "Piña Colada",
+        "type": ["drink"],
+        "price": "$900",
+        "title": "Piña Colada",
+        "description": "Un icónico cóctel tropical que combina jugo de piña fresca, crema de coco y ron blanco. Su sabor es una deliciosa fusión de dulzura y cremosidad, con un toque de ron que le añade un suave toque alcohólico.Es una opción refrescante y perfecta para relajarse en un entorno tropical o para disfrutar como un refresco veraniego."
+    },
+    {
+        "image": "https://i.pinimg.com/736x/48/68/6f/48686ffd357be25be4b553fd3de20dc0.jpg",
+        "id": "47c7b6f1-6c3a-46ce-8cfd-094fbc345bc0",
+        "name": "Margarita",
+        "type": ["drink"],
+        "price": "$800",
+        "title": "Margarita",
+        "description": "Un cóctel clásico y refrescante que combina tequila, licor de naranja y jugo de limón, servido en un vaso con borde de sal. Con su equilibrio entre lo dulce y lo ácido, es el acompañante perfecto para relajarse y disfrutar del momento."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/bb/59/1d/bb591dc8cdbc24d301e45f44dcebaf9b.jpg",
+        "id": "49db7c48-8443-4b8c-bf77-2c9e0db603f4",
+        "name": "Mojito",
+        "type": ["drink"],
+        "price": "$950",
+        "title": "Mojito",
+        "description": "Un cóctel refrescante que combina el sabor cítrico de la lima con la frescura de la menta, mezclado con ron y soda, creando una bebida equilibrada y deliciosamente revitalizante. Perfecta para relajarse en cualquier ocasión."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/38/e5/6f/38e56fd5947584395ebf2fe5d075598a.jpg",
+        "id": "9d1fc573-2a6f-4f4a-bef9-23f147e3bb77",
+        "name": "Fernet",
+        "type": ["drink"],
+        "price": "$900",
+        "title": "Fernet",
+        "description": " Un amargo licor italiano con una mezcla única de hierbas y especias que crea un sabor intenso y complejo. Ideal como aperitivo o digestivo."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/33/91/c2/3391c26924a46b3c23fde2bb0977d8aa.jpg",
+        "id": "c7d2b5ce-11ea-4d37-98ea-0e9f1a7e5153",
+        "name": "Cosmopolitan",
+        "type": ["drink"],
+        "price": "$950",
+        "title": "Cosmopolitan",
+        "description": "Un cóctel elegante y refrescante, mezcla vodka con jugo de arándano, licor de naranja y un toque de jugo de lima. Su color rosado brillante y sabor equilibrado lo convierten en una bebida icónica y sofisticada."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/6d/9e/aa/6d9eaaee432f94605d9ddb20a8bd5745.jpg",
+        "id": "663b98a0-c124-4a8e-b6f9-40c2d38c3181",
+        "name": "Frapuccino de Crema y Limón",
+        "type": ["coffee"],
+        "price": "$900",
+        "title": "Frapuccino de Crema y Limón",
+        "description": "Una bebida refrescante que combina limón cítrico con crema suave y café o leche, con una capa de crema montada encima para un toque indulgente. Un equilibrio perfecto entre lo dulce y lo ácido."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/ce/bc/22/cebc22b0e61a207fa53e756b966f0a45.jpg",
+        "id": "8434f2ea-2dd4-4a6f-9dd0-8f92f10f8f25",
+        "name": "Café Espresso con Crema",
+        "type": ["coffee"],
+        "price": "$850",
+        "title": "Café Espresso con Crema",
+        "description": "Una bebida de café que combina la intensidad del espresso con la suavidad y la textura cremosa de la crema. Se obtiene al extraer un espresso de gran calidad y luego coronarlo con una capa de crema espesa que se forma naturalmente durante la preparación. Esta crema aporta un contraste perfecto a la intensidad del café, creando una experiencia indulgente para los amantes del café que buscan un equilibrio entre el sabor fuerte y la suavidad aterciopelada en cada sorbo."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/1b/89/3b/1b893b4abfc5e377467575aa178d7ac9.jpg",
+        "id": "dbff5319-ea49-4878-90c2-3e501135ae10",
+        "name": "Café Canela y Cacao",
+        "type": ["coffee"],
+        "price": "$800",
+        "title": "Café Canela",
+        "description": "Mezcla que combina la robustez del café con la calidez especiada de la canela y la indulgencia del cacao. Una experiencia de sabor reconfortante y deliciosamente equilibrada en cada sorbo."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/94/4d/19/944d19f4e38dca4fa7af9da179aa866f.jpg",
+        "id": "7a3d5a9f-6039-4f69-9b04-aae1eb2d56c1",
+        "name": "Café Matcha",
+        "type": ["cake"],
+        "price": "$950",
+        "title": "Café Matcha",
+        "description": "Una vibrante y saludable bebida verde, elaborada con finas hojas de té matcha molido, que ofrece un sabor fresco, terroso y lleno de energía. Un estimulante natural que fusiona la tradición japonesa con un toque contemporáneo."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/44/a2/87/44a2879014d5a910b1d759aa7b126e63.jpg",
+        "id": "3a4b8928-e5e6-4e42-8c42-8f7d9b45b07c",
+        "name": "Café Crema y Cacao",
+        "type": ["coffee"],
+        "price": "$900",
+        "title": "Café Crema",
+        "description": "Una deliciosa fusión que combina la intensidad del café con la suavidad de la crema y el toque seductor del cacao. Una experiencia indulgente que equilibra sabores y te envuelve en un abrazo de sabor y textura."
+    },
+    {
+        "image": "https://i.pinimg.com/564x/f1/c0/35/f1c0359943c32bb15f497fb20ba76538.jpg",
+        "id": "a75c9a7d-70cc-4b2f-9b5a-9f042721cfd6",
+        "name": "Café Caramelo",
+        "type": ["coffee"],
+        "price": "$950",
+        "title": "Café Caramelo",
+        "description": " Un elixir dulce y reconfortante, donde el aroma y sabor del café se mezcla armoniosamente con notas suaves y ricas de caramelo. Una indulgencia líquida que deleita los sentidos."
+    }
+]
