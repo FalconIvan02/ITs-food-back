@@ -1,0 +1,33 @@
+### Obtener todas las comidas
+GET http://localhost:3000/foods
+
+### Recuperar una comidas por ID
+GET http://localhost:3000/foods/b0fd96f1-17ab-4642-bc56-4c7ce65368cd
+
+### Recuperar todas las comidas por un tipo
+GET http://localhost:3000/foods?type=lunch
+
+### Crear una comidas con POST
+POST http://localhost:3000/foods
+Content-Type: application/json
+
+{
+  "name": "Cars",
+  "price": 1050,
+  "title": "Cars la mejor peli",
+  "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
+  "type": ["lunch"],
+  "description": "lo que sea"
+}
+
+### Actualizar una comida
+
+PATCH http://localhost:3000/foods/d65ca7f6-6c76-4c52-9a84-51d02ac2bd3d
+Content-Type: application/json
+
+{
+    "price": 1
+}
+
+### Borrar una comida
+DELETE http://localhost:3000/foods/d65ca7f6-6c76-4c52-9a84-51d02ac2bd3d
