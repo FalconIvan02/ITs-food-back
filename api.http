@@ -2,10 +2,10 @@
 GET http://localhost:3000/foods
 
 ### Recuperar una comidas por ID
-GET http://localhost:3000/foods/b0fd96f1-17ab-4642-bc56-4c7ce65368cd
+GET http://localhost:3000/foods/a4a2df6a-8e8d-4b9a-a80c-6a5480c6828e
 
 ### Recuperar todas las comidas por un tipo
-GET http://localhost:3000/foods?type=lunch
+GET http://localhost:3000/foods?type=cake
 
 ### Crear una comidas con POST
 POST http://localhost:3000/foods
@@ -22,12 +22,12 @@ Content-Type: application/json
 
 ### Actualizar una comida
 
-PATCH http://localhost:3000/foods/d65ca7f6-6c76-4c52-9a84-51d02ac2bd3d
+PATCH http://localhost:3000/foods/3f55cf4b-1b3e-4f33-bb12-7d1215220b89
 Content-Type: application/json
 
 {
-    "price": 1
+    "price": 2090
 }
 
 ### Borrar una comida
-DELETE http://localhost:3000/foods/d65ca7f6-6c76-4c52-9a84-51d02ac2bd3d
+DELETE http://localhost:3000/foods/a4a2df6a-8e8d-4b9a-a80c-6a5480c6828e
