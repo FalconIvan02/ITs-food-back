@@ -1,4 +1,5 @@
-import { FoodModel } from '../models/food.js'
+/* import { FoodModel } from '../models/local-file-system/food.js' */
+import { FoodModel } from '../models/mysql/food.js'
 import { validateFood, validatePartialFood } from '../schemas/foods.js'
 
 export class foodController {

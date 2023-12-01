@@ -1,6 +1,10 @@
 import z from 'zod'
 
 const foodSchema = z.object({
+    name: z.string({
+        invalid_type_error: 'food title must be a string',
+        required_error: 'food title is required'
+    }),
     title: z.string({
         invalid_type_error: 'food title must be a string',
         required_error: 'food title is required'

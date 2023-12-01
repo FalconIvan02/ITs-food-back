@@ -2,7 +2,7 @@
 GET http://localhost:3000/foods
 
 ### Recuperar una comidas por ID
-GET http://localhost:3000/foods/a4a2df6a-8e8d-4b9a-a80c-6a5480c6828e
+GET http://localhost:3000/foods/b1d23c3b-9045-11ee-a213-fc4596eaaaef
 
 ### Recuperar todas las comidas por un tipo
 GET http://localhost:3000/foods?type=cake
@@ -12,17 +12,17 @@ POST http://localhost:3000/foods
 Content-Type: application/json
 
 {
-  "name": "Cars",
-  "price": 1050,
-  "title": "Cars la mejor peli",
+  "name": "Papas",
+  "title": "Papas a la crema",
+  "price": 1000,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
   "type": ["lunch"],
-  "description": "lo que sea"
+  "description": "riqui ricon"
 }
 
 ### Actualizar una comida
 
-PATCH http://localhost:3000/foods/3f55cf4b-1b3e-4f33-bb12-7d1215220b89
+PATCH http://localhost:3000/foods/73c81c68-9078-11ee-a213-fc4596eaaaef
 Content-Type: application/json
 
 {
@@ -30,4 +30,4 @@ Content-Type: application/json
 }
 
 ### Borrar una comida
-DELETE http://localhost:3000/foods/a4a2df6a-8e8d-4b9a-a80c-6a5480c6828e
+DELETE http://localhost:3000/foods/73c81c68-9078-11ee-a213-fc4596eaaaef
