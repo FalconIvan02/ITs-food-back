@@ -10,9 +10,12 @@ const foodSchema = z.object({
         required_error: 'food title is required'
     }),
     price: z.number().int().min(0).max(9999),
-    image: z.string().url({
-        message: 'Image must be a valid URL'
-    }),
+    image: z
+        .string()
+        .url({
+            message: 'Image must be a valid URL'
+        })
+        .optional(),
     type: z.array(z.enum(['cake', 'drink', 'lunch', 'coffee']), {
         required_error: 'type of food is required.',
         invalid_type_error: 'type of food must be an array of enum Genre'

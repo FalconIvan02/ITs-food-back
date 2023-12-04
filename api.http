@@ -12,22 +12,24 @@ POST http://localhost:3000/foods
 Content-Type: application/json
 
 {
-  "name": "Papas",
-  "title": "Papas a la crema",
-  "price": 1000,
+  "name": "pollo",
+  "title": "Pollo a la mostaza",
+  "price": 2000,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
   "type": ["lunch"],
-  "description": "riqui ricon"
+  "description": "Riquisimo con papas"
 }
 
 ### Actualizar una comida
 
-PATCH http://localhost:3000/foods/73c81c68-9078-11ee-a213-fc4596eaaaef
+PATCH http://localhost:3000/foods/003fc234-92ca-11ee-a726-fc4596eaaaef
 Content-Type: application/json
 
 {
-    "price": 2090
+  "title": "Pollo solo",
+  "price": 2130,
+  "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg"
 }
 
 ### Borrar una comida
-DELETE http://localhost:3000/foods/73c81c68-9078-11ee-a213-fc4596eaaaef
+DELETE http://localhost:3000/foods/f7770d2f-92cf-11ee-a726-fc4596eaaaef

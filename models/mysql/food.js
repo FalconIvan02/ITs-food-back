@@ -30,7 +30,7 @@ export class FoodModel {
 
     static async create({ input }) {
         console.log('Input Object:', input)
-        const { type: typeInput, name, title, price, image, description } = input
+        const { name, title, price, image, description } = input
 
         const [uuidResult] = await connection.query('SELECT UUID() uuid;')
         const [{ uuid }] = uuidResult
@@ -50,7 +50,42 @@ export class FoodModel {
         return foods[0]
     }
 
-    static async delete({ id }) {}
+    static async delete({ id }) {
+        try {
+            const [result] = await connection.query('DELETE FROM products WHERE id = UUID_TO_BIN(?);', [id])
 
-    static async update({ id, input }) {}
+            if (result.affectedRows === 0) {
+                return false
+            }
+            return true
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    static async update({ id, input }) {
+        const { title, price, image, description } = input
+
+        try {
+            const [result] = await connection.query(
+                'UPDATE products SET title = ?, price = ?, image = ?, description = ? WHERE id = UUID_TO_BIN(?)',
+                [title, price, image, description, id]
+            )
+
+            // Chequea si la actualizacion fue exitosa
+            if (result.affectedRows === 0) {
+                return false // Ninguna fila fue actualizada lo que significa que no existe comida con esa id
+            }
+
+            const [updatedFood] = await connection.query(
+                'SELECT name, title, price, image, description, BIN_TO_UUID(id) id FROM products WHERE id = UUID_TO_BIN(?)',
+                id
+            )
+
+            return updatedFood[0]
+        } catch (error) {
+            console.error('Error updating food:', error)
+            throw new Error('Error updating food')
+        }
+    }
 }
