@@ -14,7 +14,7 @@ export class FoodModel {
         let query =
             'SELECT ' +
             '   p.title, p.price, p.image, p.description, ' +
-            '   t.name as type_name, ' +
+            '   t.name as type, ' +
             '   BIN_TO_UUID(p.id) as id ' +
             'FROM ' +
             '   products p ' +
@@ -45,25 +45,30 @@ export class FoodModel {
     }
 
     static async create({ input }) {
-        console.log('Input Object:', input)
-        const { name, title, price, image, description } = input
+        console.log(input)
+        const { title, name, price, image, description, type } = input
 
-        const [uuidResult] = await connection.query('SELECT UUID() uuid;')
-        const [{ uuid }] = uuidResult
-
-        try {
-            await connection.query(
-                `INSERT INTO products (id, name, title, price, image, description) VALUES (UUID_TO_BIN("${uuid}"), ?, ?, ?, ?, ?)`,
-                [name, title, price, image, description]
-            )
-        } catch (error) {
-            console.log(error)
-        }
-        const [foods] = await connection.query(
-            'SELECT name, title, price, image, description, BIN_TO_UUID(id) id FROM products WHERE id = UUID_TO_BIN(?);',
-            uuid
+        const result = await connection.query(
+            `
+        INSERT INTO products (title, name, price, image, description) 
+        VALUES (?,?,?,?,?)`,
+            [title, name, price, image, description]
         )
-        return foods[0]
+        for (const typ of type) {
+            console.log(typ)
+            await connection.query(
+                `
+          INSERT INTO products_type (products_id, type_id) SELECT p.id, t.id
+          FROM products p JOIN type t ON p.name = ? AND t.name IN ('${typ}')`,
+                [name]
+            )
+        }
+        if (result === null) {
+            return false
+        }
+
+        console.log(result)
+        return result
     }
 
     static async delete({ id }) {

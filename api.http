@@ -2,34 +2,34 @@
 GET http://localhost:3000/foods
 
 ### Recuperar una comidas por ID
-GET http://localhost:3000/foods/b1d23c3b-9045-11ee-a213-fc4596eaaaef
+GET http://localhost:3000/foods/f172d07e-9395-11ee-a726-fc4596eaaaef
 
 ### Recuperar todas las comidas por un tipo
-GET http://localhost:3000/foods?type=drink
+GET http://localhost:3000/foods?type=lunch
 
 ### Crear una comidas con POST
 POST http://localhost:3000/foods
 Content-Type: application/json
 
 {
-  "name": "pollo",
-  "title": "Pollo a la mostaza",
+  "name": "prueba",
+  "title": "prueba",
   "price": 2000,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
-  "type": ["lunch"],
+  "type": ["drink", "lunch"],
   "description": "Riquisimo con papas"
 }
 
 ### Actualizar una comida
 
-PATCH http://localhost:3000/foods/9dc65d2d-92f5-11ee-a726-fc4596eaaaef
+PATCH http://localhost:3000/foods/32f1346a-932e-11ee-a726-fc4596eaaaef
 Content-Type: application/json
 
 {
-  "name" : "Copa piston",
-  "title": "Copa piston",
-  "price": 2130,
-  "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg"
+  "name" : "Gatito Feliz",
+  "title": "Gatito Feliz",
+  "price": 9999,
+  "image": "https://i.pinimg.com/originals/21/bf/0a/21bf0ab9ebe785ceb8c84f629cbdfd79.jpg"
 }
 
 ### Borrar una comida
