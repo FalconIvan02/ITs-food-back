@@ -25,9 +25,10 @@
                         .map((food) => {
                             return `
             <article data-id="${food.id}">
-              <h2>${food.name}</h2>
-              <img src="${food.image}" alt="${food.name}">
+              <h2>${food.title}</h2>
+              <img src="${food.image}" alt="${food.title}">
               <p>${food.price}</p>
+              <p>${food.id}</p>
 
               <button>Eliminar</button>
             </article>

@@ -11,11 +11,27 @@ const connection = await mysql.createConnection(config)
 
 export class FoodModel {
     static async getAll({ type }) {
-        const [foods] = await connection.query(
-            'SELECT title, name, price, image, description, BIN_TO_UUID(id) as id from products;'
-        )
+        let query =
+            'SELECT ' +
+            '   p.title, p.price, p.image, p.description, ' +
+            '   t.name as type_name, ' +
+            '   BIN_TO_UUID(p.id) as id ' +
+            'FROM ' +
+            '   products p ' +
+            'JOIN ' +
+            '   products_type pt ON p.id = pt.products_id ' +
+            'JOIN ' +
+            '   type t ON pt.type_id = t.id'
 
-        return foods
+        if (type) {
+            const lowerCaseType = type.toLowerCase()
+            query += ' WHERE LOWER(t.name) = ?'
+            const [result] = await connection.query(query, [lowerCaseType])
+            return result
+        }
+
+        const [result] = await connection.query(query)
+        return result
     }
 
     static async getById({ id }) {

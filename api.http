@@ -5,7 +5,7 @@ GET http://localhost:3000/foods
 GET http://localhost:3000/foods/b1d23c3b-9045-11ee-a213-fc4596eaaaef
 
 ### Recuperar todas las comidas por un tipo
-GET http://localhost:3000/foods?type=cake
+GET http://localhost:3000/foods?type=drink
 
 ### Crear una comidas con POST
 POST http://localhost:3000/foods
@@ -22,14 +22,15 @@ Content-Type: application/json
 
 ### Actualizar una comida
 
-PATCH http://localhost:3000/foods/003fc234-92ca-11ee-a726-fc4596eaaaef
+PATCH http://localhost:3000/foods/9dc65d2d-92f5-11ee-a726-fc4596eaaaef
 Content-Type: application/json
 
 {
-  "title": "Pollo solo",
+  "name" : "Copa piston",
+  "title": "Copa piston",
   "price": 2130,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg"
 }
 
 ### Borrar una comida
-DELETE http://localhost:3000/foods/f7770d2f-92cf-11ee-a726-fc4596eaaaef
+DELETE http://localhost:3000/foods/e4c35e43-92d0-11ee-a726-fc4596eaaaef
