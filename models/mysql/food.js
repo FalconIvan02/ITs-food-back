@@ -18,9 +18,9 @@ export class FoodModel {
             '   BIN_TO_UUID(p.id) as id ' +
             'FROM ' +
             '   products p ' +
-            'JOIN ' +
+            'left JOIN ' +
             '   products_type pt ON p.id = pt.products_id ' +
-            'JOIN ' +
+            'left JOIN ' +
             '   type t ON pt.type_id = t.id'
 
         if (type) {

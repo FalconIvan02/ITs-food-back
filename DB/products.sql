@@ -11,9 +11,8 @@ CREATE TABLE IF NOT EXISTS type (
   name TEXT
 );
 
-Introduccion de Tipos de Productos
 
-INSERT INTO type (name) values
+INSERT INTO `type` (name) values
 ('cake'),
 ('lunch'),
 ('drink'),
@@ -95,7 +94,16 @@ SELECT p.id, t.id
 FROM products p
 JOIN type t ON p.title IN ('Frapuccino de Crema y Limón', 'Café Espresso con Crema', 'Café Canela', 'Café Matcha', 'Café Crema', 'Café Caramelo') AND t.name = 'coffee';
 
+-- Alter the products_type table to add ON DELETE CASCADE
+ALTER TABLE products_type
+DROP FOREIGN KEY products_type_ibfk_1; -- Drop the existing foreign key
 
+-- Add a new foreign key with ON DELETE CASCADE
+ALTER TABLE products_type
+ADD CONSTRAINT products_type_ibfk_1
+FOREIGN KEY (products_id) REFERENCES products(id) ON DELETE CASCADE;
+
+-- Now, when you delete a record in the products table, the corresponding records in the products_type table will be automatically deleted.
 /* (Delet colum (solo usar si se quiere borrar Name))
 alter table products drop column name 
 

@@ -16,7 +16,7 @@ Content-Type: application/json
   "title": "prueba",
   "price": 2000,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
-  "type": ["drink", "lunch"],
+  "type": ["drink"],
   "description": "Riquisimo con papas"
 }
 
@@ -33,4 +33,4 @@ Content-Type: application/json
 }
 
 ### Borrar una comida
-DELETE http://localhost:3000/foods/e4c35e43-92d0-11ee-a726-fc4596eaaaef
+DELETE http://localhost:3000/foods/5a332be8-93ac-11ee-aac1-fc4596eaaaef
