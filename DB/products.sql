@@ -1,10 +1,10 @@
-/* MYSQL
-Creacion de tabla */
+-- MYSQL
+-- Creacion de tabla 
 drop schema if exists products;
 create schema if not exists products;
 use products;
 
-/* Tabla de Type */
+-- Tabla de Type
 
 CREATE TABLE IF NOT EXISTS type (
   id INT PRIMARY KEY auto_increment,
@@ -18,7 +18,7 @@ INSERT INTO `type` (name) values
 ('drink'),
 ('coffee');
 
-/* Tabla de Products */
+-- Tabla de Products
 
 CREATE TABLE IF NOT EXISTS products (
   id BINARY(16) PRIMARY KEY DEFAULT (UNHEX(REPLACE(uuid(),'-',''))),
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS products (
   FOREIGN KEY (type_id) REFERENCES type(id)
 );
 
-/* Tabla Products_type */
+-- Tabla Products_type
 CREATE TABLE IF NOT EXISTS products_type (
   products_id BINARY(16),
   type_id INT,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS products_type (
 );
 
 
-/* Introduccion de Productos */
+-- Introduccion de Productos
 INSERT INTO products (image, name, price, title, description)
 VALUES 
 ('https://i.pinimg.com/564x/78/5f/df/785fdf57bd6ca140b4fd09c3239c577e.jpg', 'Tiramisu', '800', 'Tiramisu', 'Un postre italiano que combina delicados bizcochos de soletilla mojados en café con una suave crema de mascarpone. Este postre es conocido por su equilibrio entre el amargor del café y la dulzura de la crema, creando una experiencia indulgente y adictiva para el paladar.'),
@@ -69,7 +69,7 @@ VALUES
 ('https://i.pinimg.com/564x/44/a2/87/44a2879014d5a910b1d759aa7b126e63.jpg', 'Café Crema y Cacao', '900', 'Café Crema', 'Una deliciosa fusión que combina la intensidad del café con la suavidad de la crema y el toque seductor del cacao. Una experiencia indulgente que equilibra sabores y te envuelve en un abrazo de sabor y textura.'),
 ('https://i.pinimg.com/564x/f1/c0/35/f1c0359943c32bb15f497fb20ba76538.jpg', 'Café Caramelo', '950', 'Café Caramelo', ' Un elixir dulce y reconfortante, donde el aroma y sabor del café se mezcla armoniosamente con notas suaves y ricas de caramelo. Una indulgencia líquida que deleita los sentidos.');
 
-/* Conexion de Tipos y Productos */
+-- Conexion de Tipos y Productos
 -- Cake
 INSERT INTO products_type (products_id, type_id)
 SELECT p.id, t.id
@@ -102,10 +102,3 @@ DROP FOREIGN KEY products_type_ibfk_1; -- Drop the existing foreign key
 ALTER TABLE products_type
 ADD CONSTRAINT products_type_ibfk_1
 FOREIGN KEY (products_id) REFERENCES products(id) ON DELETE CASCADE;
-
--- Now, when you delete a record in the products table, the corresponding records in the products_type table will be automatically deleted.
-/* (Delet colum (solo usar si se quiere borrar Name))
-alter table products drop column name 
-
-(Select)
-select BIN_TO_UUID(products_id) as 'Products ID', type_id as 'Type ID' from Products_type */
