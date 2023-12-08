@@ -18,9 +18,9 @@ export class FoodModel {
             '   BIN_TO_UUID(p.id) as id ' +
             'FROM ' +
             '   products p ' +
-            'left JOIN ' +
+            'JOIN ' +
             '   products_type pt ON p.id = pt.products_id ' +
-            'left JOIN ' +
+            'JOIN ' +
             '   type t ON pt.type_id = t.id'
 
         if (type) {
@@ -58,11 +58,19 @@ export class FoodModel {
             console.log(typ)
             await connection.query(
                 `
-          INSERT INTO products_type (products_id, type_id) SELECT p.id, t.id
-          FROM products p JOIN type t ON p.name = ? AND t.name IN ('${typ}')`,
-                [name]
+              INSERT INTO products_type (products_id, type_id)
+              SELECT p.id, t.id
+              FROM products p
+              JOIN type t ON p.name = ?
+              WHERE t.name = ? AND NOT EXISTS (
+                SELECT 1
+                FROM products_type pt
+                WHERE pt.products_id = p.id AND pt.type_id = t.id
+              )`,
+                [name, typ]
             )
         }
+
         if (result === null) {
             return false
         }

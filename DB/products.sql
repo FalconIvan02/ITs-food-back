@@ -32,14 +32,14 @@ CREATE TABLE IF NOT EXISTS products (
 );
 
 /* Tabla Products_type */
-
 CREATE TABLE IF NOT EXISTS products_type (
   products_id BINARY(16),
   type_id INT,
   PRIMARY KEY (products_id, type_id),
-  FOREIGN KEY (products_id) REFERENCES products(id),
+  FOREIGN KEY (products_id) REFERENCES products(id) ON DELETE CASCADE,
   FOREIGN KEY (type_id) REFERENCES type(id)
 );
+
 
 /* Introduccion de Productos */
 INSERT INTO products (image, name, price, title, description)

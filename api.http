@@ -16,8 +16,8 @@ Content-Type: application/json
   "title": "prueba",
   "price": 2000,
   "image": "https://i.pinimg.com/564x/be/0c/13/be0c1348d475af53d1cea012fb0522dd.jpg",
-  "type": ["drink"],
-  "description": "Riquisimo con papas"
+  "description": "Riquisimo con papas",
+  "type": ["drink"]
 }
 
 ### Actualizar una comida
