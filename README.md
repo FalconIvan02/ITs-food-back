@@ -19,3 +19,19 @@
 
 -   Sitio creado con React
 -   Uso de etiquetas de maquetación
+
+# Como abrir nuestro proyecto:
+
+## Paso 1: Descargar ambos repositorios
+
+## Paso 2: instalar las dependencias en ambos repositorios
+
+## Paso 3: Cambiar la contraseña que se encuentra en models/mysql/food.js ahi en la linea 6 en password colocar la contraseña de su Root de mysql.
+
+## Paso 4: Copiar el contenido de DB/Products.sql y pegar en Mysql Workbench para generar la base de datos
+
+## Paso 5: En la terminal de ITs-food-back escribir $npm start
+
+## Paso 6: En la terminal de ITs-food-front escribir $npm run dev
+
+## Paso 7: navegar por la pagina, en el endpoint /admin se encontrara la edicion y adicion de productos ademas de todos los productos
